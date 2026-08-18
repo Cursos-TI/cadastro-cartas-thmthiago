@@ -11,6 +11,10 @@ int main() {
     float area1;
     float pib1;
 
+    // densidade e pib percapita - DESAFIO PT2
+    float densidade1;
+    float pibPerCapita1;
+
     // Dados da Carta 2
     char estado2;
     char codigo2[4];
@@ -19,6 +23,10 @@ int main() {
     int pontosTuristicos2;
     float area2;
     float pib2;
+
+    // densidade e pib percapta - DESAFIO PT2
+    float densidade2;
+    float pibPerCapita2;
 
 
     // "cadastro da carta 1"
@@ -40,11 +48,17 @@ int main() {
     printf("Digite a area em km2: ");
     scanf("%f", &area1);
 
-    printf("Digite o PIB: ");
+    printf("Digite o PIB em Bilhões: ");
     scanf("%f", &pib1);
 
     printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &pontosTuristicos1);
+
+    // Cálculos da Carta 1 - desafio 2
+
+    densidade1 = populacao1 / area1;
+
+    pibPerCapita1 = (pib1 * 1000000000) / populacao1;
 
 
     //"cadastro da carta 2"
@@ -66,11 +80,17 @@ int main() {
     printf("Digite a area em km2: ");
     scanf("%f", &area2);
 
-    printf("Digite o PIB: ");
+    printf("Digite o PIB em Bilhões: ");
     scanf("%f", &pib2);
 
     printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &pontosTuristicos2);
+
+    // Cálculos da Carta 2 - desafio 2
+
+    densidade2 = populacao2 / area2;
+
+    pibPerCapita2 = (pib2 * 1000000000) / populacao2;
 
 
    // exibição da carta 01
@@ -87,6 +107,10 @@ int main() {
     printf("PIB: %.2f bilhoes\n", pib1);
     printf("Pontos turisticos: %d\n", pontosTuristicos1);
 
+    // Exibição - parte do desafio 2
+    printf("Densidade populacional: %.2f habitantes/km2\n", densidade1);
+    printf("PIB per capita: R$ %.2f\n", pibPerCapita1);
+
 
    // exibição da carta 02
 
@@ -101,6 +125,12 @@ int main() {
     printf("Area: %.2f km2\n", area2);
     printf("PIB: %.2f bilhoes\n", pib2);
     printf("Pontos turisticos: %d\n", pontosTuristicos2);
+
+    // Exibição - Parte do Desafio 2
+
+    printf("Densidade populacional: %.2f habitantes/km2\n", densidade2);
+    printf("PIB per capita: R$ %.2f\n", pibPerCapita2);
+
 
     return 0;
 }
