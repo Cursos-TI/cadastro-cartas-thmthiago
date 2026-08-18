@@ -11,7 +11,7 @@ int main() {
     float area1;
     float pib1;
 
-    // densidade e pib percapita - DESAFIO PT2
+    // densidade e pib percapita - parte do desafio aventureiro
     float densidade1;
     float pibPerCapita1;
 
@@ -24,12 +24,12 @@ int main() {
     float area2;
     float pib2;
 
-    // densidade e pib percapta - DESAFIO PT2
+    // densidade e pib percapta - parte do desafio aventureiro
     float densidade2;
     float pibPerCapita2;
 
 
-    // "cadastro da carta 1"
+    // "cadastro da carta 1" parte do desafio novato
 
     printf("=== CADASTRO DA CARTA 1 ===\n");
 
@@ -54,14 +54,14 @@ int main() {
     printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &pontosTuristicos1);
 
-    // Cálculos da Carta 1 - desafio 2
+    // Cálculos da Carta 1 - parte do desafio aventureiro
 
     densidade1 = populacao1 / area1;
 
     pibPerCapita1 = (pib1 * 1000000000) / populacao1;
 
 
-    //"cadastro da carta 2"
+    //"cadastro da carta 2" parte do desafio novato
 
     printf("\n=== CADASTRO DA CARTA 2 ===\n");
 
@@ -86,14 +86,14 @@ int main() {
     printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &pontosTuristicos2);
 
-    // Cálculos da Carta 2 - desafio 2
+    // Cálculos da Carta 2 - parte do desafio aventureiro
 
     densidade2 = populacao2 / area2;
 
     pibPerCapita2 = (pib2 * 1000000000) / populacao2;
 
 
-   // exibição da carta 01
+   // exibição da carta 01 - parte do desafio Novato
 
     printf("\n\n=============================\n");
     printf("        CARTA 1\n");
@@ -107,12 +107,12 @@ int main() {
     printf("PIB: %.2f bilhoes\n", pib1);
     printf("Pontos turisticos: %d\n", pontosTuristicos1);
 
-    // Exibição - parte do desafio 2
+    // Exibição - parte do desafio Aventureiro
     printf("Densidade populacional: %.2f habitantes/km2\n", densidade1);
     printf("PIB per capita: R$ %.2f\n", pibPerCapita1);
 
 
-   // exibição da carta 02
+   // exibição da carta 02 - parte do desafio Novato
 
     printf("\n=============================\n");
     printf("        CARTA 2\n");
@@ -126,7 +126,7 @@ int main() {
     printf("PIB: %.2f bilhoes\n", pib2);
     printf("Pontos turisticos: %d\n", pontosTuristicos2);
 
-    // Exibição - Parte do Desafio 2
+    // Exibição - Parte do Desafio Aventureiro
 
     printf("Densidade populacional: %.2f habitantes/km2\n", densidade2);
     printf("PIB per capita: R$ %.2f\n", pibPerCapita2);
